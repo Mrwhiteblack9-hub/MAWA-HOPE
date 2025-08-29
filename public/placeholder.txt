@@ -1,0 +1,4 @@
+Place your assets in this folder:
+- logo.jpg : site logo (round)
+- banner.jpg : hero/banner visual
+You can replace placeholder assets with real images.

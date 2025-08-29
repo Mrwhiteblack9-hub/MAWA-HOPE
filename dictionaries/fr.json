@@ -1,0 +1,28 @@
+{
+  "buy_url": "https://jup.ag/swap/SOL-MAWA",
+  "social": {
+    "telegram": "https://t.me/mawasolana",
+    "x": "https://x.com/Mawathecroco"
+  },
+  "nav": {
+    "about": "À propos",
+    "tokenomics": "Tokenomics",
+    "roadmap": "Roadmap",
+    "buy": "Acheter"
+  },
+  "hero": {
+    "tag": "Mêmecoin sérieux",
+    "title": "MAWA — Force, Élégance, Communauté",
+    "description": "MAWA est un memecoin sur Solana avec une mascotte crocodile, branding premium et vision long terme.",
+    "tokenomics_btn": "Tokenomics",
+    "contract": "Contrat SPL"
+  },
+  "home": {
+    "vision_title": "Vision",
+    "vision_text": "MAWA combine culture memecoin et exécution professionnelle. Identité forte, liquidité verrouillée et tokenomics transparents.",
+    "highlights_title": "Points clés",
+    "supply": "Supply : 1,000,000,000",
+    "lp_lock": "LP lock : 12 months",
+    "tax": "Taxe : 2%"
+  }
+}

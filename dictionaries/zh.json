@@ -1,0 +1,28 @@
+{
+  "buy_url": "https://jup.ag/swap/SOL-MAWA",
+  "social": {
+    "telegram": "https://t.me/mawasolana",
+    "x": "https://x.com/Mawathecroco"
+  },
+  "nav": {
+    "about": "关于",
+    "tokenomics": "代币经济学",
+    "roadmap": "路线图",
+    "buy": "购买"
+  },
+  "hero": {
+    "tag": "严肃的模因币",
+    "title": "MAWA — 力量、优雅、社区",
+    "description": "MAWA 是在 Solana 上的模因币，拥有鳄鱼吉祥物、高端品牌与长期愿景。",
+    "tokenomics_btn": "代币经济学",
+    "contract": "SPL 合约"
+  },
+  "home": {
+    "vision_title": "愿景",
+    "vision_text": "MAWA 将模因文化与专业执行相结合。强烈身份、流动性锁定与透明的代币经济学。",
+    "highlights_title": "亮点",
+    "supply": "总量：1,000,000,000",
+    "lp_lock": "流动性锁定：12 个月",
+    "tax": "税率：2%"
+  }
+}
