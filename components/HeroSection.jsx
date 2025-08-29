@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import Countdown from './Countdown'
 
-export default function HeroSection({ buyUrl, lang = 'fr', dictHero = {}, banner = '/banner.svg' }) {
+export default function HeroSection({ buyUrl, lang = 'fr', dictHero = {}, banner = '/banner.jpg' }) {
   // target: 13 September 2025 00:00:00 UTC
   const targetISO = '2025-09-13T00:00:00Z'
 
