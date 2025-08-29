@@ -1,9 +1,9 @@
 'use client'
 import Link from 'next/link'
 import Countdown from './Countdown'
+import Image from 'next/image'
 
 export default function HeroSection({ buyUrl, lang = 'fr', dictHero = {}, banner = '/banner.webp' }) {
-  // target: 13 September 2025 00:00:00 UTC
   const targetISO = '2025-09-13T00:00:00Z'
 
   // allow title as array or string (safe)
@@ -14,7 +14,6 @@ export default function HeroSection({ buyUrl, lang = 'fr', dictHero = {}, banner
   else if (typeof dictHero === 'string') titleParts = String(dictHero).split(',').map(s => s.trim())
   else titleParts = ['Force','Élégance','Communauté']
 
-  // colors mapping (use CSS variables from globals)
   const colors = dictHero?.colors ?? ['--mawa-blue','--mawa-white','--mawa-red']
 
   const renderColoredTitle = () => (
@@ -29,6 +28,7 @@ export default function HeroSection({ buyUrl, lang = 'fr', dictHero = {}, banner
 
   return (
     <section id="hero" className="grid lg:grid-cols-5 gap-8 items-center py-8">
+      {/* Texte */}
       <div className="lg:col-span-3">
         <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/5 text-xs">
           {dictHero?.tag ?? 'Mêmecoin sérieux'}
@@ -45,7 +45,7 @@ export default function HeroSection({ buyUrl, lang = 'fr', dictHero = {}, banner
         <div className="mt-6 flex gap-3">
           {buyUrl && (
             <a href={buyUrl} target="_blank" rel="noreferrer" className="btn-primary">
-              {dictHero?.buy_button ?? (lang === 'fr' ? 'Acheter sur Jupiter' : dictHero?.buy_button ?? 'Buy on Jupiter')}
+              {dictHero?.buy_button ?? (lang === 'fr' ? 'Acheter sur Jupiter' : 'Buy on Jupiter')}
             </a>
           )}
           <Link href={`/${lang}/tokenomics`} className="px-5 py-2 rounded-2xl border border-white/10">
@@ -63,10 +63,18 @@ export default function HeroSection({ buyUrl, lang = 'fr', dictHero = {}, banner
         </div>
       </div>
 
+      {/* Image */}
       <div className="lg:col-span-2 flex justify-center lg:justify-end">
         <div className="w-full max-w-sm grid place-items-center">
           {banner ? (
-            <img src={banner} alt={dictHero?.banner ?? 'Bannière MAWA'} className="w-full h-auto rounded-lg shadow-lg" />
+            <Image
+              src={banner}
+              alt={dictHero?.banner ?? 'Bannière MAWA'}
+              width={600}
+              height={600}
+              className="w-full h-auto rounded-lg shadow-lg object-contain"
+              priority
+            />
           ) : null}
         </div>
       </div>
