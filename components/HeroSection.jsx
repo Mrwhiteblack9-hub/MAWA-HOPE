@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Countdown from './Countdown'
 import Image from 'next/image'
 
-export default function HeroSection({ buyUrl, lang = 'fr', dictHero = {}, banner = '/banner.webp' }) {
+export default function HeroSection({ buyUrl, lang = 'fr', dictHero = {}, banner = '/banner.jpg' }) {
   const targetISO = '2025-09-13T00:00:00Z'
 
   // Gestion du titre (string ou array)
